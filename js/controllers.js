@@ -6,11 +6,11 @@ angular.module('myApp.controllers', []).
     } ]).
     controller('evCtrl', [function () {
         init();
-        var path = new paper.Path.Circle(new Point(80, 50), 30);
+        var path = new Path.Circle(new Point(80, 50), 30);
         path.strokeColor = 'black';
-        var zf2 = paper.project.importSVG('y11');
-        paper.view.draw();
+        var zf2 = project.importSVG('y11');
         function init() {
+            paper.install(window);
             paper.setup(document.getElementById('evCanvas'));
         }
     } ]);
