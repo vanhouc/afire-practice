@@ -9,6 +9,7 @@ angular.module('myApp.controllers', []).
         var path = new paper.Path.Circle(new Point(80, 50), 30);
         path.strokeColor = 'black';
         var zf2 = paper.project.importSVG('y11');
+        paper.view.draw();
         function init() {
             paper.setup(document.getElementById('evCanvas'));
         }
