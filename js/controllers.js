@@ -4,7 +4,7 @@ angular.module('myApp.controllers', []).
     controller('helloWorldCtrl', [function () {
         this.helloText = 'Hello from helloWorldCtrl';
     } ]).
-    controller('evCtrl', [@scope, function ($scope) {
+    controller('evCtrl', ['@scope', function ($scope) {
         $scope.keyDown = function() {
           view.scrollBy(new Point(50,0));  
         };
