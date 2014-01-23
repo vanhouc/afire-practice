@@ -10,7 +10,6 @@ angular.module('myApp.controllers', []).
         path.strokeColor = 'black';
         var zf2 = project.importSVG('y11');
         function init() {
-            paper.install(window);
             paper.setup(document.getElementById('evCanvas'));
         }
     } ]);
