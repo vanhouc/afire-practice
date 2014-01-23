@@ -2,11 +2,8 @@
     <div class="canvas">
         <script type="text/javascript" src="js/paper.js"></script>
         <script type="text/paperscript" canvas="evCanvas" data-paper-loaded="true">
-            var path = new Path();
+            var path = new Path.Circle(new Point(80,50), 30);
             path.strokeColor = 'black';
-            var start = new Point(100, 100);
-            path.moveTo(start);
-            path.lineTo(start + [100, -50]);
         </script>
         <canvas resize id="evCanvas"></canvas>
     </div>
