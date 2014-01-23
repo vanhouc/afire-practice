@@ -6,9 +6,9 @@ angular.module('myApp.controllers', []).
     } ]).
     controller('evCtrl', [function () {
         init();
-        var path = new Path.Circle(new Point(80, 50), 30);
+        var path = new paper.Path.Circle(new Point(80, 50), 30);
         path.strokeColor = 'black';
-        var zf2 = project.importSVG('y11');
+        var zf2 = paper.project.importSVG('y11');
         function init() {
             paper.setup(document.getElementById('evCanvas'));
         }
