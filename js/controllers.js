@@ -5,5 +5,11 @@ angular.module('myApp.controllers', []).
         this.helloText = 'Hello from helloWorldCtrl';
     } ]).
     controller('evCtrl', [function () {
-        this.helloText = 'Hello from evCtrl';
+        init();
+        var path = new Path.Circle(new Point(80,50), 30);
+        path.strokeColor = 'black';
+        function init() {
+            paper.install(window);
+            paper.setup(document.getElementById('evCanvas'));
+        }
     } ]);
