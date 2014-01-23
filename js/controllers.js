@@ -5,9 +5,9 @@ angular.module('myApp.controllers', []).
         this.helloText = 'Hello from helloWorldCtrl';
     } ]).
     controller('evCtrl', [function () {
-        $scope.keyDown = function() {
-          view.scrollBy(new Point(50,0));  
-        };
+ //       $scope.keyDown = function() {
+ //         view.scrollBy(new Point(50,0));  
+ //       };
         init();
         var path = new Path.Circle(new Point(80, 50), 30);
         path.strokeColor = 'black';
